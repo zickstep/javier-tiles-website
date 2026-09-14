@@ -1,0 +1,209 @@
+/* =========================================
+   Theme Variables
+   ========================================= */
+:root {
+    /* Light Mode Palette (Default) */
+    --bg-color: #ffffff; 
+    --bg-alt: #f7f7f7; 
+    --primary-color: #ff6b55; 
+    --text-main: #333333; 
+    --text-muted: #666666;
+    
+    --container-width: 1100px;
+}
+
+/* Dark Mode Palette Overrides */
+.dark-mode {
+    --bg-color: #121212; 
+    --bg-alt: #1e1e1e;
+    --primary-color: #ff8a7a; 
+    --text-main: #f5f5f5;
+    --text-muted: #bbbbbb;
+}
+
+/* =========================================
+   Base & Typography
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    /* Smooth transition for the dark mode toggle */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+
+/* =========================================
+   Buttons
+   ========================================= */
+button, .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    transition: opacity 0.2s;
+}
+
+button:hover { opacity: 0.9; }
+
+.btn-secondary {
+    background: none;
+    border: 1px solid var(--text-main);
+    color: var(--text-main);
+}
+
+/* =========================================
+   Layout: Header & Services
+   ========================================= */
+.site-header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--bg-alt);
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services {
+    padding: 60px 20px;
+}
+
+.service-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows stacking on mobile */
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.service-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-content, .service-image {
+    flex: 1 1 400px; 
+}
+
+/* Keeps the photos perfectly cropped and uniform */
+img.service-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.placeholder-img {
+    background-color: var(--bg-alt);
+    height: 300px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* =========================================
+   Layout: Testimonials & CTA
+   ========================================= */
+.testimonial {
+    background-color: var(--bg-alt);
+    padding: 60px 20px;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.cta-contact {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.cta-contact h2 { color: #fff; }
+
+.contact-form {
+    max-width: 500px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-submit {
+    background-color: #333;
+    color: #fff;
+    font-weight: 700;
+}#theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* style.css */
+
+/* Logo and text styling in the header */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Removes underline from the link */
+    gap: 15px; /* Adds space between monogram and text */
+}
+
+/* Scaled monogram logo - much smaller and aligned */
+.site-logo {
+    height: 50px; /* Adjust height to match the text (scale down from huge version) */
+    width: auto;
+}
+
+/* New logo text styling */
+.logo-text {
+    color: var(--primary-color);
+    font-family: 'Lato', sans-serif; /* Explicitly use Lato */
+    font-size: 2.2rem; /* Matches the size in the original design */
+    font-weight: 700; /* Use a bold weight */
+    line-height: 1; /* Tight line height for better alignment */
+    margin: 0; /* Clear default margins */
+}

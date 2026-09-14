@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Ibañez Tiles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<!-- Navigation & Dark Mode Toggle -->
+<header class="site-header">
+    <div class="container nav-flex">
+        <!-- Flex container with both the monogram and the text -->
+        <a href="index.html" class="logo-link" aria-label="JavierTiles Home">
+            <img src="assets/images/ji-tiles-logo.webp" alt="JavierTiles logo" class="site-logo">
+            <!-- ADD THIS SPAN FOR THE TEXT -->
+            <span class="logo-text">JavierTiles</span>
+        </a>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </div>
+</header>
+
+    <main>
+        <!-- Hero / Intro Section -->
+        <section class="intro container text-center" style="padding: 40px 20px;">
+            <h2>Tile services built around your space</h2>
+            <p>Every project deserves careful planning, quality workmanship, and a finish that fits your style. Explore JavierTiles services for bathrooms, showers, floors, walls, and backsplashes.</p>
+            <br>
+            <h2>Professional tile installation in Northern Utah and Eastern Idaho</h2>
+            <p>JavierTiles delivers detail-driven tile services for bathrooms, shower pan kits, floors, walls, and custom backsplashes. From a single accent wall to a complete tile renovation, we help homeowners create durable, beautiful spaces in any area of their home.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services container">
+            <!-- Service 1 -->
+            <div class="service-row">
+                <div class="service-content">
+                    <h2>Bathroom tile installation</h2>
+                    <p>Refresh your bathroom with professionally installed wall tile, floor tile, tub surrounds, and accent details. JavierTiles helps create a clean, polished bathroom that is made for everyday use.</p>
+                    <button class="btn-primary">Explore our services</button>
+                </div>
+                <img src="assets/images/bathroom-tile-installation.webp" alt="White marble bathroom tile installation" class="service-image">
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-row reverse">
+                <div class="service-content">
+                    <h2>Shower pan kits and tile showers</h2>
+                    <p>Build a reliable, attractive shower with shower pan kit installation and custom tilework. We focus on precise preparation and a finished shower that complements the rest of your bathroom.</p>
+                    <button class="btn-primary">See our services</button>
+                </div>
+                <img src="assets/images/shower-tile-remodel-bountiful-utah.webp" alt="Dark modern shower tile remodel" class="service-image">
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-row">
+                <div class="service-content">
+                    <h2>Tile floors and walls</h2>
+                    <p>Add lasting style underfoot or make a wall a focal point. JavierTiles installs tile flooring and wall tile for kitchens, bathrooms, entryways, living spaces, and other areas of your home.</p>
+                    <button class="btn-primary">View tile services</button>
+                </div>
+                <img src="assets/images/tile-floors-remodel-utah.webp" alt="Large format tile floor installation" class="service-image">
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-row reverse">
+                <div class="service-content">
+                    <h2>Custom kitchen backsplashes</h2>
+                    <p>Give your kitchen a finished look with a custom tile backsplash. Choose from classic, modern, or distinctive tile designs, and let JavierTiles bring your backsplash vision to life.</p>
+                    <button class="btn-primary">View our work</button>
+                </div>
+                <img src="assets/images/kitchen-backsplash-remodel-bountiful-utah.webp" alt="White herringbone kitchen backsplash" class="service-image">
+            </div>
+        </section>
+
+        <!-- Testimonial Section (Ready for your reviews) -->
+        <section class="testimonial" id="reviews">
+            <div class="container text-center">
+                <!-- Drop the real reviews here later -->
+                <blockquote>"[Customer testimonial placeholder. Waiting for updated reviews.]"</blockquote>
+                <cite>— [[Customer name]], [[City, Utah]]</cite>
+            </div>
+        </section>
+
+        <!-- CTA & Contact Form Section -->
+        <section class="cta-contact">
+            <div class="container text-center">
+                <h2>Ready to start your tile project?</h2>
+                <p>Tell JavierTiles about your bathroom, shower, floor, wall, or backsplash project. Request an appointment and estimate for professional tile service in Bountiful, Utah, and surrounding areas.</p>
+                
+                <form action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Tell us about your project..." rows="4" required></textarea>
+                    <button type="submit" class="btn-submit">Request Estimate</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" style="padding: 40px 20px; background-color: var(--bg-alt); border-top: 1px solid #ddd;">
+        <div class="container" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+            
+            <div class="footer-col">
+                <h3 style="color: var(--primary-color);">Contact JavierTiles</h3>
+                <p>Bountiful, Utah, United States</p>
+                <br>
+                <h3 style="color: var(--primary-color);">Business hours</h3>
+                <p>Monday-Friday: 8:00 am - 7:00 pm</p>
+                <p>Saturday: 8:00 am - 5:00 pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+
+            <div class="footer-col">
+                <h3 style="color: var(--primary-color);">Call or text</h3>
+                <p><a href="tel:2082069680" style="color: inherit; text-decoration: none;">208-206-9680</a></p>
+                <br>
+                <p><a href="mailto:javiertiles9@gmail.com" style="color: var(--primary-color);">Email to javiertiles9@gmail.com</a></p>
+                <br>
+                <h3 style="color: var(--primary-color);">Follow JavierTiles on</h3>
+                <p>
+                    <a href="#" style="color: inherit;">Facebook Javier Ibáñez</a> &middot; 
+                    <a href="#" style="color: inherit;">Instagram Javier751981</a>
+                </p>
+            </div>
+
+            <!-- Cross-Promotion Link -->
+            <div class="footer-col partner-promo" style="padding-top: 20px; border-top: 2px solid var(--primary-color); width: 100%;">
+                <p><strong>Need professional residential or commercial painting?</strong></p>
+                <p>Visit our trusted partners at <a href="https://YOUR-GITHUB-PAGES-LINK-HERE" style="color: var(--primary-color); font-weight: bold;">Z Works Painting, LLC</a> for expert interior and exterior services.</p>
+            </div>
+            
+        </div>
+        <div class="container text-center" style="margin-top: 40px; font-size: 0.9rem; color: var(--text-muted);">
+            <p>&copy; 2026 JavierTiles. Custom built.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
