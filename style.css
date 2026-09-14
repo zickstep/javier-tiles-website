@@ -207,3 +207,18 @@ img.service-image {
     line-height: 1; /* Tight line height for better alignment */
     margin: 0; /* Clear default margins */
 }
+
+/* Hero Image Styling */
+.hero-image-container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding-bottom: 2rem; /* Adds breathing room before the text starts */
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Keeps the hands visible without pushing text entirely off-screen */
+    object-fit: cover; 
+}
